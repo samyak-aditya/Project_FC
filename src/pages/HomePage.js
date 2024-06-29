@@ -18,11 +18,11 @@ const HomePage = () => {
         transition={{ duration: 1.5, ease: 'easeInOut' }}
       >
           <FallingFruits />
-          <Typography
+          <Typography className=" "
           variant="h1"
           component="h1"
-          color="primary"
-          sx={{ fontFamily: 'Bebas Neue, sans-serif', fontWeight: 400 }}
+          color="secondary"
+          sx={{fontSize: '10vw', fontFamily: 'Bebas Neue, sans-serif', fontWeight: 400 }}
         >
           Fruit Creatives
         </Typography>
