@@ -21,7 +21,7 @@ const AboutPage = () => {
       </Typography> */}
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Typography marginTop={10} variant="h5" component="h2" gutterBottom>
+          <Typography  fontWeight={700} className='tagline' marginTop={10} variant="h5" component="h2" gutterBottom>
           FruitCreatives: Juicing Up Your Web Presence
           </Typography>
           {/* <Typography variant="body1" paragraph>
