@@ -5,7 +5,8 @@ button {
   --purple: #db07d1;
   --orange: #f27005;
   --blue: #61dafb;
- scale: 0.5.5;
+ scale: 0.5;
+ 
   appearance: none;
   border: none;
   cursor: pointer;
@@ -77,9 +78,10 @@ button {
 
 .label {
     
-  width: 380px;
-  height: 50px;
-  padding: 0 0;
+  width:fit-content;
+  height: fit-content;
+  
+  padding: 5px;
   transform: translateZ(0);
   font-weight: 700;
   z-index: 1;

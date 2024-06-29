@@ -1,55 +1,82 @@
 import React from 'react';
 import { Typography, Container, Grid, Paper } from '@mui/material';
-import textures from '../assets/images/texture.png'
+import './AboutPage.css';
 
 const AboutPage = () => {
   return (
     <Container
+      className='backgroundtexture'
+      maxWidth={'100vw'}
       style={{
+        width: '100%',
         padding: '20px',
         backgroundImage: 'url("/texture.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         borderRadius: '0px',
-        marginTop: '0px',
+        marginLeft: '0px',
         color: 'black', // Ensure text is readable over the background image
       }}
     >
-      {/* <Typography variant="h2" component="h1" gutterBottom>
-        About Us
-      </Typography> */}
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Typography  fontWeight={700} className='tagline' marginTop={10} variant="h5" component="h2" gutterBottom>
-          FruitCreatives: Juicing Up Your Web Presence
-          </Typography>
-          {/* <Typography variant="body1" paragraph>
-            FruitCreatives is dedicated to building high-quality websites for startups. Our mission is to help businesses establish their online presence and achieve their goals.
-          </Typography> */}
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Paper
-            elevation={0}
-            style={{
-              padding: '20px',
-              backgroundColor: 'rgba(255, 255, 255, 0.2)',
-              backdropFilter: 'blur(0.3px)',
-              WebkitBackdropFilter: 'blur(0.3px)',
-            //   boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-              borderRadius: '10px',
+          <Typography
+            marginLeft={{ xs: 2, md: 20 }}
+            fontWeight={700}
+            className='tagline'
+            marginTop={10}
+            variant="h5"
+            component="h2"
+            gutterBottom
+            sx={{
+              fontSize: { xs: '3em', sm: '5em', md: '8em' },
+              fontFamily: 'Domine, serif',
             }}
           >
-            <Typography variant="h6" component="h3" gutterBottom>
-              Client Testimonial
-            </Typography>
-            <Typography variant="body1" paragraph>
-              "FruitCreatives transformed our online presence with a stunning website that perfectly captures our brand essence. Their team is incredibly talented and professional."
-            </Typography>
-            <Typography variant="body2" align="right">
-              - Satisfied Client
-            </Typography>
-          </Paper>
+            Juicing Up Your Web <span className="highlighted-text">Presence</span>
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={6} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <div
+            style={{
+              width: '40%',
+              backgroundColor: "red",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-end'
+            }}
+          >
+            <Paper
+              variant="outlined"
+              elevation={3}
+              style={{
+                width: '90%',
+                padding: '20px',
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                backdropFilter: 'blur(0.3px)',
+                WebkitBackdropFilter: 'blur(0.3px)',
+                borderRadius: '10px',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+              }}
+            >
+              <Typography variant="h6" component="h3" gutterBottom>
+                Client Testimonial
+              </Typography>
+              <Typography
+                fontSize={{ xs: 16, sm: 18, md: 20 }}
+                fontFamily={"Assistant, sans-serif"}
+                fontWeight={600}
+                variant="body1"
+                paragraph
+              >
+                "FruitCreatives transformed our online presence with a stunning website that perfectly captures our brand essence. Their team is incredibly talented and professional."
+              </Typography>
+              <Typography variant="body2" align="right">
+                - Satisfied Client
+              </Typography>
+            </Paper>
+          </div>
         </Grid>
       </Grid>
     </Container>
