@@ -4,19 +4,21 @@ import './AboutPage.css';
 
 const AboutPage = () => {
   return (
-    <Container
+    <Container  
       className='backgroundtexture'
       maxWidth={'100vw'}
       style={{
         width: '100%',
         padding: '20px',
-        backgroundImage: 'url("/texture.png")',
-        backgroundSize: 'cover',
+        position: 'relative',
+        backgroundImage: 'url("/textures1.png")',
+        backgroundColor: '#f98949',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        
         borderRadius: '0px',
         marginLeft: '0px',
         color: 'black', // Ensure text is readable over the background image
+        zIndex: '5'
       }}
     >
       <Grid container spacing={4}>
