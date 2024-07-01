@@ -36,8 +36,10 @@ function App() {
             <Button color="inherit" href="/contact">Contact</Button> */}
           </Toolbar>
         </AppBar>
+        
         <HomePage />
         <AboutPage />
+      
         {/* <Container>
           <Routes>
             <Route path="/" exact element={<HomePage />} />
