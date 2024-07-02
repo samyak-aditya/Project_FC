@@ -1,14 +1,10 @@
 import React from 'react';
-import { BrowserRouter , Route, Routes } from 'react-router-dom';
-import { ThemeProvider, CssBaseline, AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
+import { BrowserRouter  } from 'react-router-dom';
+import { ThemeProvider, CssBaseline, AppBar, Toolbar, Typography} from '@mui/material';
 import theme from './theme/theme';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ServicesPage from './pages/ServicesPage';
-import PortfolioPage from './pages/PortfolioPage';
 import TestimonialsPage from './pages/TestimonialsPage';
-import ContactPage from './pages/ContactPage';
-
 import './App.css';
 import BookcallButton from './components/3DButton';
 

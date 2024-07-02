@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import FallingFruits from '../components/FallingFruits';
 import './HomePage.css';
-import AboutPage from './AboutPage';
+
 
 const HomePage = () => {
   return (
