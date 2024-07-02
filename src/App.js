@@ -39,6 +39,7 @@ function App() {
         
         <HomePage />
         <AboutPage />
+        <TestimonialsPage />
       
         {/* <Container>
           <Routes>
