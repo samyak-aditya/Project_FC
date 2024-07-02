@@ -4,7 +4,6 @@ import { useRef, useLayoutEffect } from "react";
 import { transition } from "./settings";
 import { Canvas, useThree } from "@react-three/fiber";
 import { useSmoothTransform } from "./use-smooth-transform";
-
 export function Shapes({ isHover, isPress, mouseX, mouseY }) {
   const lightRotateX = useSmoothTransform(mouseY, spring, mouseToLightRotation);
   const lightRotateY = useSmoothTransform(mouseX, spring, mouseToLightRotation);
@@ -147,11 +146,13 @@ function Camera({ mouseX, mouseY, ...props }) {
       set(() => ({ camera: cameraRef.current }));
       return () => set(() => ({ camera: oldCam }));
     }
-  }, [camera, cameraRef, set]);
-
+  }, [camera, set, cameraRef]);
+  
   useLayoutEffect(() => {
     return cameraX.onChange(() => camera.lookAt(scene.position));
-  }, [cameraX]);
+  }, [cameraX, camera, scene.position]);
+
+  
 
   return (
     <motion.perspectiveCamera
