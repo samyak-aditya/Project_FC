@@ -10,7 +10,7 @@ import raspberry from '../assets/images/raspberry (2).png'
 import bananas from '../assets/images/bananas.png'
 import blueberry from '../assets/images/blueberry (1).png'
 import watermelon from '../assets/images/watermelon.png'
-import Background from './Background';
+
 
 const fruits = [apple,blueberry, grapes,watermelon, orange,bananas, strawberry, lemon, pineapple, raspberry];
 
