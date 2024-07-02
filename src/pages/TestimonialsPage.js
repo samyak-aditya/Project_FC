@@ -1,8 +1,7 @@
 import React from 'react';
-import { Typography, Container, List, ListItem, ListItemAvatar, ListItemText, Avatar } from '@mui/material';
+import { Typography, Container, List, ListItem, ListItemAvatar, ListItemIcon, ListItemText, Avatar } from '@mui/material';
+
 import './TestimonialsPage.css';
-
-
 
 const testimonials = [
   { 
@@ -23,7 +22,6 @@ const testimonials = [
   // Add more testimonials with image properties here
 ];
 
-
 const TestimonialsPage = () => {
   return (
     <Container maxWidth={'100vw'} className="testimonials-container">
@@ -32,28 +30,34 @@ const TestimonialsPage = () => {
       </Typography>
       <List>
         {testimonials.map((testimonial, index) => (
-          <ListItem key={index} className="testimonial-item">
-           
+          <ListItem key={index} className="testimonial-item" alignItems="flex-start">
+            <ListItemIcon>
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25672.png" alt="quotes" style={{height: "40px" , width: "40px"}} />
+            </ListItemIcon>
             <ListItemText 
-              primary={<Typography marginLeft={2} variant="h6" className="testimonial-name">
- <ListItemAvatar>
-              <Avatar src={testimonial.image} alt={testimonial.name} className="testimonial-avatar" />
-            </ListItemAvatar>
-                {testimonial.name}
-                </Typography>}
-              secondary={
+              primary={
                 <Typography 
                   marginLeft={2} 
                   lineHeight={1.1} 
                   maxWidth={'60vw'} 
                   fontFamily={"Noto Serif, serif"} 
-                  fontSize={60} 
-                  fontWeight={800} 
+                  fontSize={20} 
+                  fontWeight={400} 
                   variant="body1" 
                   className="testimonial-feedback"
                 >
                   {testimonial.feedback}
                 </Typography>
+              }
+              secondary={
+                <div className="testimonial-details">
+                  <ListItemAvatar>
+                    <Avatar src={testimonial.image} alt={testimonial.name} className="testimonial-avatar" />
+                  </ListItemAvatar>
+                  <Typography marginLeft={2} variant="h6" className="testimonial-name">
+                    {testimonial.name}
+                  </Typography>
+                </div>
               }
             />
           </ListItem>
