@@ -12,13 +12,13 @@ const AboutPage = () => {
         padding: '20px',
         position: 'relative',
         backgroundImage: 'url("/textures1.png")',
-        backgroundColor: '#f98949',
+       backgroundColor: '#f98949',
         backgroundPosition: 'center',
         
         borderRadius: '0px',
         marginLeft: '0px',
         color: 'black', // Ensure text is readable over the background image
-        zIndex: '5'
+        zIndex: '1'
       }}
     >
       <Grid container spacing={4}>

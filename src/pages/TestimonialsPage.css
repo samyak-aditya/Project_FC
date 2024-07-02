@@ -1,0 +1,40 @@
+.testimonials-container {
+    
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f98949;
+  }
+  
+  .testimonials-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-item {
+    margin-bottom: 20px;
+    opacity: 0.8;
+    
+  }
+  
+  .testimonial-item:hover {
+    opacity: 1;
+  }
+  
+  .testimonial-name {
+    color: grey;
+    
+  }
+  
+  .testimonial-feedback {
+    color: rgb(0, 0, 0);
+    
+    
+  }
+  
+  .testimonial-item:hover .testimonial-name,
+  .testimonial-item:hover .testimonial-feedback {
+    color: white;
+  }
+  
