@@ -31,30 +31,34 @@ const TestimonialsPage = () => {
       <List>
         {testimonials.map((testimonial, index) => (
           <ListItem key={index} className="testimonial-item" alignItems="flex-start">
-            <ListItemIcon>
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25672.png" alt="quotes" style={{height: "40px" , width: "40px"}} />
-            </ListItemIcon>
+           
             <ListItemText 
               primary={
                 <Typography 
-                  marginLeft={2} 
+                
+                  marginLeft={20}
                   lineHeight={1.1} 
                   maxWidth={'60vw'} 
                   fontFamily={"Noto Serif, serif"} 
-                  fontSize={20} 
-                  fontWeight={400} 
+                  fontSize={50} 
+                  fontWeight={800} 
                   variant="body1" 
                   className="testimonial-feedback"
                 >
+                   <ListItemIcon>
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25672.png" alt="quotes" style={{height: "40px" , width: "40px"}} />
+            </ListItemIcon>
+            <br />
                   {testimonial.feedback}
                 </Typography>
               }
               secondary={
                 <div className="testimonial-details">
+                  
+                  <Typography marginLeft={20} variant="h6" className="testimonial-name">
                   <ListItemAvatar>
                     <Avatar src={testimonial.image} alt={testimonial.name} className="testimonial-avatar" />
                   </ListItemAvatar>
-                  <Typography marginLeft={2} variant="h6" className="testimonial-name">
                     {testimonial.name}
                   </Typography>
                 </div>
