@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import './App.css';
 import BookcallButton from './components/3DButton';
+import ServicesPage from './pages/ServicesPage';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <HomePage />
         <AboutPage />
         <TestimonialsPage />
+        <ServicesPage />
       
         {/* <Container>
           <Routes>
