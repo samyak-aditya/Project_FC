@@ -1,11 +1,16 @@
 import React from 'react';
 import { Typography, Container, Grid, Card, CardContent, CardMedia } from '@mui/material';
+import ecommerce from'../assets/images/online-shopping-concept-landing-page_23-2148253518.jpg';
+import webdev from '../assets/images/webdev.jpg';
+import seo from '../assets/images/seo.jpg';
+import uiux from '../assets/images/UIUX.jpg';
+
 
 const services = [
-  { title: 'Website Development', image: 'https://via.placeholder.com/150?text=Website+Development' },
-  { title: 'E-commerce Solutions', image: 'https://via.placeholder.com/150?text=E-commerce+Solutions' },
-  { title: 'SEO Optimization', image: 'https://via.placeholder.com/150?text=SEO+Optimization' },
-  { title: 'UI/UX Design', image: 'https://via.placeholder.com/150?text=UI%2FUX+Design' },
+  { title: 'Website Development', image: webdev },
+  { title: 'E-commerce Solutions', image: ecommerce },
+  { title: 'SEO Optimization', image: seo },
+  { title: 'UI/UX Design', image: uiux },
 ];
 
 const ServicesPage = () => {
