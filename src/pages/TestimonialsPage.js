@@ -9,25 +9,23 @@ const testimonials = [
     feedback: "Fruit Creatives transformed our online presence with a stunning website that perfectly captures our brand essence.", 
     image: "https://example.com/path/to/shahe-image.jpg" 
   },
-  { 
-    name: "Jane Doe | Graphic Designer", 
-    feedback: "Working with Fruit Creatives was a fantastic experience. Their team is professional and highly skilled.", 
-    image: "https://example.com/path/to/jane-image.jpg" 
-  },
-  { 
-    name: "John Smith | Entrepreneur", 
-    feedback: "Fruit Creatives helped us achieve our business goals with a user-friendly and aesthetically pleasing website.", 
-    image: "https://example.com/path/to/john-image.jpg" 
-  }
+  // { 
+  //   name: "Jane Doe | Graphic Designer", 
+  //   feedback: "Working with Fruit Creatives was a fantastic experience. Their team is professional and highly skilled.", 
+  //   image: "https://example.com/path/to/jane-image.jpg" 
+  // },
+  // { 
+  //   name: "John Smith | Entrepreneur", 
+  //   feedback: "Fruit Creatives helped us achieve our business goals with a user-friendly and aesthetically pleasing website.", 
+  //   image: "https://example.com/path/to/john-image.jpg" 
+  // }
   // Add more testimonials with image properties here
 ];
 
 const TestimonialsPage = () => {
   return (
     <Container maxWidth={'100vw'} className="testimonials-container">
-      <Typography variant="h2" component="h1" gutterBottom className="testimonials-title">
-        Client Testimonials
-      </Typography>
+      
       <List>
         {testimonials.map((testimonial, index) => (
           <ListItem key={index} className="testimonial-item" alignItems="flex-start">

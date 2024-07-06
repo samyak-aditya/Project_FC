@@ -43,7 +43,7 @@ const AboutPage = () => {
           <div
             style={{
               width: '40%',
-              backgroundColor: "red",
+              
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'flex-end'
