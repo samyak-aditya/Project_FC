@@ -1,0 +1,10 @@
+.containerbg{
+    width: 100%;
+    background-color: #f98949 ;
+}
+
+.service-card {
+    max-width: 300px; /* Adjust this value as needed */
+    margin: auto; /* Center the card horizontally */
+    border-radius: 10;
+  }

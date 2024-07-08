@@ -1,10 +1,10 @@
 import React from 'react';
 import { Typography, Container, Grid, Card, CardContent, CardMedia } from '@mui/material';
-import ecommerce from'../assets/images/online-shopping-concept-landing-page_23-2148253518.jpg';
+import ecommerce from '../assets/images/online-shopping-concept-landing-page_23-2148253518.jpg';
 import webdev from '../assets/images/webdev.jpg';
 import seo from '../assets/images/seo.jpg';
 import uiux from '../assets/images/UIUX.jpg';
-
+import './ServicesPage.css';
 
 const services = [
   { title: 'Website Development', image: webdev },
@@ -15,19 +15,20 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <Container>
+    <Container maxWidth={'100vw'} className="containerbg">
       <Typography variant="h2" component="h1" gutterBottom>
         Our Services
       </Typography>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} justifyContent="center">
         {services.map((service, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card>
+          <Grid item xs={12} sm={6} md={3} key={index}>
+            <Card className="service-card">
               <CardMedia
                 component="img"
                 alt={service.title}
                 height="140"
                 image={service.image}
+                
               />
               <CardContent>
                 <Typography variant="h5" component="h2">
