@@ -7,4 +7,29 @@
     max-width: 300px; /* Adjust this value as needed */
     margin: auto; /* Center the card horizontally */
     border-radius: 10;
+    
   }
+
+
+  .service-card {
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+  color: white; /* White text color */
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.service-card .MuiCardContent-root {
+  background-color: transparent; /* Make the CardContent background transparent */
+}
+
+.containerbg {
+  background-color: #f5f5f5; /* Example background color for the container */
+  padding: 2rem 0;
+}
+
+.MuiTypography-root {
+  color: inherit; /* Ensure text inherits the color from the card */
+}

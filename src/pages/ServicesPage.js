@@ -28,7 +28,6 @@ const ServicesPage = () => {
                 alt={service.title}
                 height="140"
                 image={service.image}
-                
               />
               <CardContent>
                 <Typography variant="h5" component="h2">
