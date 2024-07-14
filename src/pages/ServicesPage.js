@@ -22,7 +22,7 @@ const ServicesPage = () => {
       <Grid container spacing={4} justifyContent="center">
         {services.map((service, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
-            <Card className="service-card">
+            <Card style={{ backgroundColor: 'black', color: 'white' }}>
               <CardMedia
                 component="img"
                 alt={service.title}
