@@ -1,9 +1,10 @@
 import React from 'react';
+import './ContactPage.css';
 import { Typography, Container, TextField, Button, Box } from '@mui/material';
 
 const ContactPage = () => {
   return (
-    <Container>
+    <Container clasName="Contactcontainer" >
       <Typography variant="h2" component="h1" gutterBottom>
         Contact Us
       </Typography>
