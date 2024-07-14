@@ -7,6 +7,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .Contactcontainer{
+    background-color:#f98949 ;
+  }
   
   .contact-textfield .MuiInputBase-input {
     color: black; /* Secondary color for input text */
