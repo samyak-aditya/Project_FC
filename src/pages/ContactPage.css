@@ -1,0 +1,40 @@
+.contact-heading {
+    color: #f98949; /* Primary color */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-textfield .MuiInputBase-input {
+    color: black; /* Secondary color for input text */
+  }
+  
+  .contact-textfield .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #f98949; /* Primary color for border */
+  }
+  
+  .contact-textfield .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #f98949; /* Primary color for border on hover */
+  }
+  
+  .contact-textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #f98949; /* Primary color for border when focused */
+  }
+  
+  .contact-textfield .MuiFormLabel-root.Mui-focused {
+    color: #f98949; /* Primary color for label when focused */
+  }
+  
+  .contact-button {
+    margin: 8px;
+    background-color: #f98949; /* Primary color */
+    color: black; /* Secondary color for text */
+  }
+  
+  .contact-button:hover {
+    background-color: #e57b3d; /* Darker shade for hover effect */
+  }
+  
