@@ -1,41 +1,25 @@
-.contact-heading {
+.Contactcontainer {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f98949;
+  }
+  
+  .contact-card {
+    width: 400px;
+    padding: 20px;
+  }
+  
+  .contact-heading {
     color: #f98949; /* Primary color */
   }
   
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Contactcontainer{
-    background-color:#f98949 ;
-  }
-  
-  .contact-textfield .MuiInputBase-input {
-    color: black; /* Secondary color for input text */
-  }
-  
-  .contact-textfield .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
-    border-color: #f98949; /* Primary color for border */
-  }
-  
-  .contact-textfield .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-    border-color: #f98949; /* Primary color for border on hover */
-  }
-  
-  .contact-textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-    border-color: #f98949; /* Primary color for border when focused */
-  }
-  
-  .contact-textfield .MuiFormLabel-root.Mui-focused {
-    color: #f98949; /* Primary color for label when focused */
-  }
-  
   .contact-button {
-    margin: 8px;
     background-color: #f98949; /* Primary color */
-    color: black; /* Secondary color for text */
+    color: black; /* Secondary color */
   }
   
   .contact-button:hover {
