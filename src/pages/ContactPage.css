@@ -9,7 +9,7 @@
   }
   
   .contact-card {
-    width: 400px;
+   width: 20vw;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -21,6 +21,7 @@
   }
   
   .contact-button {
+    scale: 1;
     background-color: #f98949; /* Primary color */
     color: black; /* Secondary color */
   }

@@ -1,0 +1,32 @@
+/* src/components/LetsTalk.css */
+.lets-talk-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lets-talk-title {
+    margin-bottom: 20px;
+    color: #f98949; /* Use the primary color */
+  }
+  
+  .lets-talk-description {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .book-meeting-button {
+    background-color: #f98949; /* Use the primary color */
+    color: #fff;
+  }
+  
+  .book-meeting-button:hover {
+    background-color: #d8783f; /* Slightly darker shade */
+  }
+  
