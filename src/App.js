@@ -9,6 +9,7 @@ import './App.css';
 import BookcallButton from './components/3DButton';
 import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage';
+import LetsTalk from './pages/LetsTalk';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <AboutPage />
         <TestimonialsPage />
         <ServicesPage />
+        <LetsTalk />
         <ContactPage />
       
         {/* <Container>
