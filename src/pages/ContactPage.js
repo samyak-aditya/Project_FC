@@ -5,7 +5,7 @@ import { Typography, Container, TextField, Button, Box, Card, CardContent } from
 const ContactPage = () => {
   return (
     <Container maxWidth={'100vw'}  className="Contactcontainer">
-      <Card className="contact-card">
+      <Card  className="contact-card">
         <CardContent>
           <Typography variant="h2" component="h1" gutterBottom className="contact-heading">
             Contact Us
