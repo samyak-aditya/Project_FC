@@ -30,3 +30,9 @@
     background-color: #d8783f; /* Slightly darker shade */
   }
   
+  .meeting-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
