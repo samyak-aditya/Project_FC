@@ -5,6 +5,7 @@ import './LetsTalk.css';
 
 // Import your image
 import meetingImage from '../assets/images/meeting.svg';
+import BookcallButton from '../components/3DButton';
 
 const LetsTalk = () => {
   return (
@@ -16,9 +17,10 @@ const LetsTalk = () => {
       <Typography variant="body1" className="lets-talk-description">
         We are here to help you. Book a meeting with us and let's discuss how we can assist you with your project.
       </Typography>
-      <Button variant="contained" color="primary" className="book-meeting-button">
+      {/* <Button variant="contained" color="primary" className="book-meeting-button">
         Book a Meeting
-      </Button>
+      </Button> */}
+      <BookcallButton />
     </Box>
   );
 };
