@@ -14,7 +14,7 @@
   
   .lets-talk-title {
     margin-bottom: 20px;
-    color: #f98949; /* Use the primary color */
+    color: #000000; /* Use the primary color */
   }
   
   .lets-talk-description {
@@ -32,8 +32,8 @@
   }
   
   .meeting-image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    margin-top: 20px; /* Adjust margin as needed */
+    margin-top: 0px; /* Adjust margin as needed */
   }
   
