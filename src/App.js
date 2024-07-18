@@ -17,10 +17,10 @@ function App() {
       <CssBaseline />
       <BrowserRouter>
         <AppBar position="static"  style={{
-        backgroundColor: 'rgba(0, 0, 0,1 )', // Adjust opacity as needed
+        backgroundColor: 'rgba(0, 0, 0,0.5 )', // Adjust opacity as needed
         backdropFilter: 'blur(10px)', // Add blur effect
         WebkitBackdropFilter: 'blur(10px)', // For Safari
-        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)', // Add a subtle shadow
+        //boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)', // Add a subtle shadow
       }}>
           <Toolbar >
             <Typography variant="h6" fontSize={40} fontFamily={'Bebas Neue, sans-serif'} component="div" sx={{ flexGrow: 1, color: 'orange' }}>
