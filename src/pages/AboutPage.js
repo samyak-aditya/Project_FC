@@ -18,7 +18,7 @@ const AboutPage = () => {
         borderRadius: '0px',
         marginLeft: '0px',
         color: 'black', // Ensure text is readable over the background image
-        zIndex: '1'
+        zIndex: '-1'
       }}
     >
       <Grid container spacing={4}>
