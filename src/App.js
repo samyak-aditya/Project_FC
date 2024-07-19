@@ -10,13 +10,16 @@ import BookcallButton from './components/3DButton';
 import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage';
 import LetsTalk from './pages/LetsTalk';
+import { px } from 'framer-motion';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
-        <AppBar position="static"  style={{
+         <AppBar position="static"  style={{
+         position: 'fixed',
+          
         backgroundColor: 'rgba(0, 0, 0,0.5 )', // Adjust opacity as needed
         backdropFilter: 'blur(10px)', // Add blur effect
         WebkitBackdropFilter: 'blur(10px)', // For Safari
@@ -34,7 +37,7 @@ function App() {
             <Button color="inherit" href="/testimonials">Testimonials</Button>
             <Button color="inherit" href="/contact">Contact</Button> */}
           </Toolbar>
-        </AppBar>
+        </AppBar> 
         
         <HomePage />
         <AboutPage />

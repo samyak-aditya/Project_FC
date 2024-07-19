@@ -7,26 +7,7 @@ import BookcallButton from '../components/3DButton';
 
 const HomePage = () => {
   return (
-    <>
-    <AppBar position="static"  style={{
-      backgroundColor: 'rgba(0, 0, 0,0.5 )', // Adjust opacity as needed
-      backdropFilter: 'blur(10px)', // Add blur effect
-      WebkitBackdropFilter: 'blur(10px)', // For Safari
-      //boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)', // Add a subtle shadow
-    }}>
-        <Toolbar >
-          <Typography variant="h6" fontSize={40} fontFamily={'Bebas Neue, sans-serif'} component="div" sx={{ flexGrow: 1, color: 'orange' }}>
-            Fruit Creatives
-          </Typography>
-          <BookcallButton />
-          {/* <Button color="inherit" href="/">Home</Button>
-          <Button color="inherit" href="/about">About</Button>
-          <Button color="inherit" href="/services">Services</Button>
-          <Button color="inherit" href="/portfolio">Portfolio</Button>
-          <Button color="inherit" href="/testimonials">Testimonials</Button>
-          <Button color="inherit" href="/contact">Contact</Button> */}
-        </Toolbar>
-      </AppBar>
+    
     <div className="home-container">
       
       <FallingFruits/>
@@ -61,7 +42,6 @@ const HomePage = () => {
       
       
     </div>
-    </>
   );
 };
 
