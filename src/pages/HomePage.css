@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f98949;
-  z-index: 5;
+  z-index: -1;
 }
 
 .center-text {
