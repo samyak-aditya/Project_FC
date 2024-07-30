@@ -18,7 +18,7 @@ export default function BookcallButton() {
   };
 
   return (
-    <MotionConfig className="3dbutton" transition={transition}>
+    <MotionConfig className="threedbutton" transition={transition}>
       <a href="https://cal.com/fruitcreatives-hr/15min" target="_blank" rel="noopener noreferrer">
         <motion.button
           ref={ref}
