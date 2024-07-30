@@ -16,7 +16,7 @@ button {
   outline: none;
   margin: 0;
   padding: 12px 25px;
-  font-family: "Poppins";
+  font-family: "Poppins" , sans-serif;
   font-size: 38px;
   font-weight: 600;
   line-height: 48px;
@@ -139,11 +139,11 @@ button {
 
 
 
-MotionConfig {
+.threedbutton {
     
   min-height: 100vh;
   display: flex;
-  font-family: "Inter", Arial;
+  font-family: "Inter", Arial, sans-serif;
   justify-content: center;
   align-items: center;
   background: #f4f5fa;
