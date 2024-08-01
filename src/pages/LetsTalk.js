@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import './LetsTalk.css';
+import letstalk from '../components/Untitled.svg'
 
 // Import your image
 import meetingImage from '../assets/images/meeting.svg';
