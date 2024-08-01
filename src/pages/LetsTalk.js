@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import './LetsTalk.css';
+import letstalk from '../components/Untitled.svg'
 
 // Import your image
 import meetingImage from '../assets/images/meeting.svg';
@@ -13,7 +14,7 @@ const LetsTalk = () => {
       <Typography variant="h2" className="lets-talk-title">
         Let's Talk
       </Typography>
-      <img src={meetingImage} alt="Meeting" className="meeting-image" />
+      <img src={letstalk} alt="Meeting" className="meeting-image" />
       <Typography variant="body1" className="lets-talk-description">
         We are here to help you. Book a meeting with us and let's discuss how we can assist you with your project.
       </Typography>
