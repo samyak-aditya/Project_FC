@@ -5,6 +5,7 @@ import webdev from '../assets/images/webdev.jpg';
 import seo from '../assets/images/seo.jpg';
 import uiux from '../assets/images/UIUX.jpg';
 import './ServicesPage.css';
+import { motion } from "framer-motion";
 
 const services = [
   { title: 'Website Development', image: webdev },
@@ -22,6 +23,11 @@ const ServicesPage = () => {
       <Grid container spacing={4} justifyContent="center">
         {services.map((service, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
+            <motion.div
+      className="box"
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+    >
             <Card style={{ backgroundColor: 'black', color: 'white' }}>
               <CardMedia
                 component="img"
@@ -35,6 +41,7 @@ const ServicesPage = () => {
                 </Typography>
               </CardContent>
             </Card>
+            </motion.div>
           </Grid>
         ))}
       </Grid>
