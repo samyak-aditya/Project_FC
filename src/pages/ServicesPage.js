@@ -24,8 +24,10 @@ const ServicesPage = () => {
         {services.map((service, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
             <motion.div
+            onPan={(e, pointInfo) => {}}
       className="box"
       whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >
             <Card style={{ backgroundColor: 'black', color: 'white' }}>
